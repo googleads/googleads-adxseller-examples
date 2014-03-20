@@ -34,7 +34,8 @@ MAX_PAGE_SIZE = 50
 
 # Declare command-line flags.
 argparser = argparse.ArgumentParser(add_help=False)
-argparser.add_argument('ad_client_id',
+argparser.add_argument(
+    'ad_client_id',
     help='The ad client ID for which to get URL channels')
 
 

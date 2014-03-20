@@ -15,8 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""This example gets all the saved reports for the logged
-in user's default account.
+"""This example gets all the saved reports for the user's default account.
 
 Tags: savedreports.list
 """
@@ -33,7 +32,7 @@ MAX_PAGE_SIZE = 50
 
 def main(argv):
   # Authenticate and construct service.
-  service, flags = sample_tools.init(
+  service, _ = sample_tools.init(
       argv, 'adexchangeseller', 'v1.1', __doc__, __file__, parents=[],
       scope='https://www.googleapis.com/auth/adexchange.seller.readonly')
 

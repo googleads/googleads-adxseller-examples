@@ -22,7 +22,6 @@ Tags: preferreddeals.list
 
 __author__ = 'sgomes@google.com (Sérgio Gomes)'
 
-import argparse
 import sys
 
 from apiclient import sample_tools
@@ -31,7 +30,7 @@ from oauth2client import client
 
 def main(argv):
   # Authenticate and construct service.
-  service, flags = sample_tools.init(
+  service, _ = sample_tools.init(
       argv, 'adexchangeseller', 'v1.1', __doc__, __file__, parents=[],
       scope='https://www.googleapis.com/auth/adexchange.seller.readonly')
 
@@ -53,7 +52,7 @@ def main(argv):
             output += 'on network "%s" ' % deal['buyerNetworkName']
 
           output += 'was found.'
-          print(output)
+          print output
       else:
         print 'No preferred deals found!'
   except client.AccessTokenRefreshError:

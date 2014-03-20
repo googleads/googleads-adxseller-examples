@@ -32,7 +32,7 @@ MAX_PAGE_SIZE = 50
 
 def main(argv):
   # Authenticate and construct service.
-  service, flags = sample_tools.init(
+  service, _ = sample_tools.init(
       argv, 'adexchangeseller', 'v1.1', __doc__, __file__, parents=[],
       scope='https://www.googleapis.com/auth/adexchange.seller.readonly')
 

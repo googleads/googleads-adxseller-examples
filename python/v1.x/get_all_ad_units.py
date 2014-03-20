@@ -32,7 +32,8 @@ from oauth2client import client
 
 # Declare command-line flags.
 argparser = argparse.ArgumentParser(add_help=False)
-argparser.add_argument('ad_client_id',
+argparser.add_argument(
+    'ad_client_id',
     help='The ID of the ad client for which to generate a report')
 
 MAX_PAGE_SIZE = 50
