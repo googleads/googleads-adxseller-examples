@@ -114,7 +114,8 @@
     <dependency>
       <groupId>com.google.apis</groupId>
       <artifactId>google-api-services-adexchangeseller</artifactId>
-      <version>v1.1-rev1-1.17.0-rc</version>
+      <!--When we move to a new Major version this will need to be fixed in the previous version samples -->
+      <version>LATEST</version>
     </dependency>
     <dependency>
       <groupId>com.google.http-client</groupId>
