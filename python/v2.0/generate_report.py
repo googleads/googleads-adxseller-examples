@@ -54,7 +54,7 @@ def main(argv):
     # Retrieve report.
     if saved_report_id:
       result = service.accounts().reports().saved().generate(
-          savedReportId=saved_report_id).execute()
+          savedReportId=saved_report_id, accountId='myaccount').execute()
     elif ad_client_id:
       result = service.accounts().reports().generate(
           accountId='myaccount',
