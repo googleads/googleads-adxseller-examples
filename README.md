@@ -1,3 +1,7 @@
+[Archived]
+==========
+This project has been archived and is no longer actively maintained
+
 Samples for the DoubleClick Ad Exchange Seller REST API
 =======================================================
 These code samples are organized by platform or language.
